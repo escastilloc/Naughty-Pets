@@ -1,0 +1,65 @@
+@import "../../styles/vars.scss";
+
+.suscribe
+{
+	grid-area: suscribe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	width: 100%;
+	height: 100%;
+    background-color: $gray;
+}
+
+    .suscribe-title
+    {
+        font-size: 1.5em;
+        font-weight: 400;
+        color: white;
+    }
+
+    .suscribe-field
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+    }
+
+        .suscribe-field > input[type="text"],
+        .suscribe-field > button
+        {
+            border: 0px;
+            font-size: 1.1em;
+            height: 40px;
+        }
+
+        .suscribe-field > input[type="text"]
+        {
+            border-radius: 10px 0px 0px 10px;
+            width: 300px;
+            padding-left: 20px;
+            color: black;
+        }
+
+        .suscribe-field > button
+        {
+            border-radius: 0px 10px 10px 0px;
+            width: 120px;
+            background-color: $blue;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.5s;
+        }
+
+        .suscribe-field > button:hover
+        {
+            background-color: $dark-blue;
+        }
+
+    .suscribe-message
+    {
+        font-size: 1.0em;
+        color: white;
+    }

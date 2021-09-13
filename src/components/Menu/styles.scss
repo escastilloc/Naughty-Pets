@@ -1,0 +1,31 @@
+.menu
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+    .menu-item
+    {
+        color: white;
+    }
+
+    .menu-item a
+    {
+        color: white;
+        text-decoration: none;
+        font-weight: 400;
+        color: rgb(214, 214, 214);
+        transition: color .5s;
+    }
+
+    .menu-item:hover a
+    {
+        text-decoration: underline;
+        color: white;
+    }
+
+    .menu-item:not(:last-child)
+    {
+        padding-right: 20px;
+    }

@@ -1,0 +1,91 @@
+@import "./vars.scss";
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+    color: $text-color;
+    font-weight: 300;
+    outline: none;
+}
+
+.app
+{
+	display: grid;
+	grid-template-areas: "nav"
+                         "content";
+	grid-template-rows: 50px auto;
+	grid-template-columns: auto;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.layout
+{
+    display: grid;
+	grid-template-areas: "title"
+                         "detail";
+	grid-template-rows: 70px auto;
+	grid-template-columns: auto;
+	width: 100vw;
+	height: calc(100vh - 70px);
+	overflow: hidden;
+}
+
+    .title
+    {
+        grid-area: title;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        font-size: 2em;
+        font-weight: 400;
+        color: white;
+        background-color: $gray;
+    }
+
+    .detail
+    {
+        grid-area: detail;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+.scroll
+{
+    overflow-y: overlay;
+    overflow-x: hidden;
+}
+
+    .scroll::-webkit-scrollbar {
+        background-color: transparent;
+    }
+
+    .scroll:hover::-webkit-scrollbar {
+        background-color: rgba(149, 149, 149, 0.1);
+    }
+
+    .scroll::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+
+    .scroll:hover::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+.rotate
+{
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}

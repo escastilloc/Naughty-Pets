@@ -1,0 +1,26 @@
+@import "../../../styles/vars.scss";
+
+.nav
+{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $red;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+    .nav-left
+    {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .nav-right
+    {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }

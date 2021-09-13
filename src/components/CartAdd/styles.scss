@@ -1,0 +1,61 @@
+@import "../../styles/vars.scss";
+
+.cart-add
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 405px;
+}
+
+    .cart-add button 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0px;
+        height: 30px;
+        border-radius: 10px;
+        transition: background-color .5s;
+    }
+
+    .cart-add button i
+    {
+        color: white;
+        font-size: 1.2em;
+        margin-right: 10px;
+    }
+
+    .cart-add button span
+    {
+        color: white;
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+
+    .cart-add-button
+    {
+        width: 180px;
+        background-color: $blue;
+    }
+
+        .cart-add-button:disabled
+        {
+            background-color: #CCCCCC;
+        }
+
+        .cart-add-button:hover:enabled
+        {
+            background-color: $dark-blue;
+        }
+
+        .cart-add-back
+        {
+            width: 105px;
+            background-color: $green;
+        }
+
+        .cart-add-back:hover
+        {
+            background-color: $dark-green;
+        }

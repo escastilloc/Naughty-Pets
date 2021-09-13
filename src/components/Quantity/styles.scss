@@ -1,0 +1,65 @@
+@import "../../styles/vars.scss";
+
+.quantity
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 110px;
+	height: 30px;
+}
+
+    .quantity-button-left,
+    .quantity-button-right
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        border: 0px;
+        height: 100%;
+        background-color: #CCCCCC;
+        color: white;
+        font-size: 15pt;
+        font-weight: 400;
+        transition: background-color .5s;
+    }
+
+    .quantity-button-left:disabled,
+    .quantity-button-right:disabled
+    {
+        background-color: #CCCCCC;
+    }
+
+    .quantity-button-left:hover:enabled,
+    .quantity-button-right:hover:enabled
+    {
+        background-color: darken(#CCCCCC, 20%);
+    }
+
+    .quantity-button-left
+    {
+        border-radius: 10px 0px 0px 10px !important;
+    }
+
+    .quantity-button-right
+    {
+        border-radius: 0px 10px 10px 0px !important;
+    }
+
+    .quantity-value
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 100%;
+        background-color: white;
+        border-top: 1px solid #CCCCCC;
+        border-bottom: 1px solid #CCCCCC;
+        color: #555555;
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+
+    
